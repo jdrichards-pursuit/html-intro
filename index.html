@@ -1,0 +1,136 @@
+<!-- comments now look like this -->
+
+<!-- to create a base HTML code structure you type ! and hit the TAB button -->
+
+<!--this tells the browser to use HTML as the markdown language -->
+<!DOCTYPE html>
+<!--this sets up your HTML document. everything you want on screen must go between the html tags-->
+
+<!--attributes change the size, display, functionality of an element or tag. below lang is saying to use the english language-->
+
+<html lang="en">
+  <!---->
+  <head>
+    <!--this tells the browser to use UTF-8 characters -->
+    <meta charset="UTF-8" />
+    <!--below is deprecated. this was to tell the browser what browser types to support-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--this below tells the browser to use the full width of any devince you are using. this one is important-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Meta tags are great for SEO or search engine optimization-->
+
+    <!--Changes the label of the web page-->
+    <title>Intro To HTML</title>
+  </head>
+  <body>
+    <!--whitespace in html will be ignored, BUT we have ways of dealing with it
+    
+    There are two categories of tags.
+        1. Block level elements - e.g. <p> <h1> block level creates a space after the closing tag as if you had hit the enter button
+        2. Inline level elements - a, img, span, div, 
+
+    -->
+    <!--br represents line break and uses a self closing tag
+    <p> is for paragraph which will create a larger break than the br element
+-->
+
+    <p>
+      Hello World!<br />
+      How are you
+    </p>
+    <!--HR represents horizontal rule-->
+    <hr />
+    <p>What are we going to do today?</p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eius
+      dolorum laudantium eligendi distinctio ab minima sapiente temporibus
+      recusandae quam eum, doloribus suscipit dolores vitae. Quisquam ad
+      delectus nihil quaerat.
+    </p>
+    <!--If we type Lorem and hit the tab button. Lorem ipsum text will be created-->
+    <p>
+      This is my actual text for this paragraph y chocolate pastry. Sesame snaps
+      chocolate bar powder jelly beans cake cookie cupcake. Apple pie sesame
+      snaps shortbread gingerbread oat cake liquorice. Tootsie roll lollipop
+      muffin sweet roll tootsie roll macaroon cookie bear claw sweet. Muffin
+      bonbon marshmallow wafer cupcake tiramisu candy tiramisu. Gummi bears
+      gummi bears gummi bears gummies cupcake. Croissant bear claw toffee
+      topping donut. Soufflé brownie chocolate bar gummies pie. Croissant bear
+      claw shortbread jelly-o jelly marzipan lemon drops shortbread. Candy canes
+      muffin cheesecake biscuit jujubes. Topping halvah pastry bear claw dessert
+      cake sesame snaps.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+      maxime tempore nisi quaerat qui nesciunt ratione eligendi impedit
+      excepturi? Beatae quod rerum sed qui optio?
+    </p>
+    <!-- if we use p*5 this will create 5 paragraphs-->
+
+    <!--HEADINGS-->
+    <!--There are six different headings in HTML h1, h2, h3,...h6
+    h1 is the largest heading an each heading is incrementally smaller
+    -->
+    <h1>Largest Heading H1</h1>
+    <p>Some info about h1 goes here</p>
+    <!--subheading-->
+    <h2>Largest Heading H2</h2>
+    <p>Info about this heading goes here</p>
+    <h6>Largest Heading H6</h6>
+    <!--2 styling tags in html we won't be using them-->
+    <!--em tag italicizes the text-->
+    <p><em>This code is italicized</em></p>
+    <!--strong makes the text bold-->
+    <p><strong>This code is bold</strong></p>
+
+    <!--2 kinds of lists
+      1. Ordered lists which precedes each item with a number
+      2. Unordered list which precedes each item with some type of symbal
+    
+    We build an ordered list using the tag <ol>
+    -->
+    <ol>
+      <li>First item!</li>
+      <li>Second item!</li>
+      <li>Third item!</li>
+    </ol>
+
+    <!--UL or unordered list creates a symbol before each item-->
+    <ul>
+      <li>First item!</li>
+      <li>Second item!</li>
+      <li>Third item!</li>
+    </ul>
+    <!--Hypertext Links can guide a user to another part of the page, or to an external website, or to another page within the same website-->
+    <!-- a for anchor is the tag used to create a link. 
+    href attribute tells the page where to navigate
+    -->
+    <h2>Links</h2>
+    <!--the target attribute allows us to open a link in another tab instead of navigating away from the page-->
+    <a href="https://www.google.com" target="_blank">Link text</a>
+    <a href="about.html">About Page</a>
+
+    <!--img is the tag we use to create an image. It is a self closing
+    2 attributes
+    1. src or source - link to the image
+    2. alt or alternate - text referencing the image do not use the word image or picture
+
+    img is an inline element
+    
+    -->
+    <!--image options for dummy images include
+    1. pixabay
+    2. unsplash (my fav)
+    3. imgur
+    4. wikicommons
+    -->
+    <!--width and height attributes in the img tag can help control size-->
+    <img
+      width="100"
+      height="100"
+      src="https://i.imgur.com/GleAY3fb.jpg"
+      alt="tiger"
+    />
+    <br /><br /><br /><br /><br />
+  </body>
+</html>
